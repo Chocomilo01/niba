@@ -1,51 +1,81 @@
+/* Main footer container */
 .afooter {
   position: relative;
   bottom: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.9); /* Darker background for footer */
   color: white;
-  padding: 10px;
+  padding: 40px 0; /* Increased padding for more spacing */
   margin-top: auto;
 }
 
-.afooter .col-background {
-  
-  padding: 15px; /* Padding inside the column */
-  
+/* Footer Text */
+.afooter h5 {
+  font-size: 18px; /* Slightly larger font size */
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center; /* Center the heading text */
 }
+
 .afooter p {
-  background-color: #2c3e50; /* Soft dark blue background */
-  text-align: left; /* Align the p tag to the left */
-  padding-left: 20px; /* Add padding to the left for spacing */
+  text-align: center; /* Center the paragraph text */
   margin: 0;
-  width: fit-content;
-  border-radius: 5px; /* Optional rounded corners */
-  
+  font-size: 14px;
 }
 
-.afooter .resources-section {
-  margin-top: 5px;
+/* Resources and Contact Section Styling */
+.afooter .resources-section, 
+.afooter .contact-section {
+  margin-bottom: 20px; /* Increased bottom margin for spacing */
+  text-align: center; /* Ensure centered content */
 }
 
-.afooter .resources-section h3 {
+.afooter .resources-section ul, 
+.afooter .contact-section ul {
+  list-style: none;
+  padding: 0;
+  text-align: center; /* Center list items */
+}
+
+.afooter .resources-section ul li,
+.afooter .contact-section ul li {
+  margin-bottom: 10px;
+}
+
+.afooter .resources-section ul li a,
+.afooter .contact-section ul li a {
   color: #ffffff;
-  margin-bottom: 5px;
+  text-decoration: none;
+  font-size: 14px;
 }
 
-.afooter .resources-section ul {
+.afooter .resources-section ul li a:hover,
+.afooter .contact-section ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Social Media Section Styling */
+.afooter .social-media {
+  text-align: center;
+  margin-top: 20px; /* Add some space above the social media section */
+}
+
+.afooter .social-media ul {
   list-style: none;
   padding: 0;
 }
 
-.afooter .resources-section ul li {
-  margin-bottom: 5px;
+.afooter .social-media ul li {
+  display: inline;
+  margin-right: 15px;
 }
 
-.afooter .resources-section ul li a {
+.afooter .social-media ul li a {
   color: #ffffff;
   text-decoration: none;
+  font-size: 16px;
 }
 
-.afooter .resources-section ul li a:hover {
+.afooter .social-media ul li a:hover {
   text-decoration: underline;
 }
