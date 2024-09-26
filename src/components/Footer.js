@@ -1,20 +1,17 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import './Footer.css'; // Make sure you import the CSS file
+import './Footer.css'; 
 
 const Footer = () => {
   return (
     <footer className="afooter">
       <Container fluid>
-        {/* First Row: Branding and Links */}
         <Row className="justify-content-center py-4">
-  {/* Branding Section */}
   <Col md={3} className="text-center">
     <h5>Niba</h5>
     <p>&copy; {new Date().getFullYear()} Niba. All rights reserved.</p>
   </Col>
 
-  {/* Resources Section */}
   <Col md={3} className="text-center resources-section">
     <h5>Resources</h5>
     <ul>
@@ -24,7 +21,6 @@ const Footer = () => {
     </ul>
   </Col>
 
-  {/* Contact Section */}
   <Col md={3} className="text-center contact-section">
     <h5>Contact Us</h5>
     <ul>
@@ -36,7 +32,6 @@ const Footer = () => {
 </Row>
 
 
-        {/* Second Row: Social Media Links */}
         <Row className="justify-content-center py-3">
           <Col md={6} className="social-media">
             <h5>Follow Us</h5>
