@@ -10,25 +10,30 @@ const CurrencyConverter = () => {
   const [convertedAmount, setConvertedAmount] = useState(null);
   const [error, setError] = useState(null);
 
-  useEffect(() => {
-    const fetchConversionRate = async () => {
-      try {
-        const response = await axios.get(`https://v6.exchangerate-api.com/v6/dfa9fe95d0ced9a64679fee2/latest/${fromCurrency}`);
-        const rate = response.data.conversion_rates[toCurrency];
-        setConversionRate(rate);
-        setConvertedAmount((amount * rate).toFixed(2));
-      } catch (err) {
-        setError('Failed to fetch conversion rate');
-      }
-    };
+  const fetchConversionRate = async () => {
+    try {
+      const response = await axios.get(`https://v6.exchangerate-api.com/v6/dfa9fe95d0ced9a64679fee2/latest/${fromCurrency}`);
+      const rate = response.data.conversion_rates[toCurrency];
+      setConversionRate(rate);
+      setConvertedAmount((amount * rate).toFixed(2));
+      setError(null); // Clear error on successful fetch
+    } catch (err) {
+      setError('Failed to fetch conversion rate');
+    }
+  };
 
+  useEffect(() => {
     fetchConversionRate();
-  }, [amount, fromCurrency, toCurrency]);
+  }, [fromCurrency, toCurrency]); // Depend on currencies change only
+
+  const handleConvert = () => {
+    fetchConversionRate();
+  };
 
   return (
     <div className="currency-converter p-3">
       <h3>Currency Converter</h3>
-      <Form>
+      <Form onSubmit={(e) => e.preventDefault()}>
         <Form.Group controlId="amount">
           <Form.Label>Amount</Form.Label>
           <Form.Control
@@ -63,12 +68,12 @@ const CurrencyConverter = () => {
             {/* Add more currencies as needed */}
           </Form.Control>
         </Form.Group>
-        <Button variant="primary" type="button" onClick={() => setAmount(amount)}>
+        <Button variant="primary" type="button" onClick={handleConvert}>
           Convert
         </Button>
       </Form>
       {error && <Alert variant="danger">{error}</Alert>}
-      {conversionRate && (
+      {conversionRate !== null && (
         <div className="mt-3">
           <h3>
             {amount} {fromCurrency} = {convertedAmount} {toCurrency}
