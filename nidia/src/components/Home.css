@@ -1,0 +1,88 @@
+.nidiahome {
+  margin-top: 10%;
+  height: auto;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  z-index: 1;
+  font-size: larger;
+}
+
+.text-center {  
+  margin-bottom: 10%;
+
+}
+
+
+/* Paystack Info Section */
+.paystack-info {
+  /* margin-top: 0px; Adjust as needed */
+  margin-bottom: 30px; /* Adjust as needed */
+  padding: 100px;
+  /* background-color: #e2edf6; */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: left; /* Align text to the left */
+  width: 100%; /* Ensure full width usage */
+}
+
+.mt-8 {
+  text-align: right;
+  /* background-color: #e2e6df; */
+
+}
+
+
+.paystack-info h2 {
+  font-size: 2rem; /* Ensure the main heading is prominent */
+}
+
+.paystack-info p {
+  margin-top: 10px;
+}
+
+
+.justify-content-center.mt-5 {
+  background-color: #e2edf6;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional Styles for Row */
+.textmatch {
+  /* margin-top: 30px; Adjust as needed */
+  margin-bottom: 30px; /* Adjust as needed */
+  padding: 100px;
+  /* background-color: #e2edf6; */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 10px 4px 10px rgba(0, 0, 0, 0); /* Subtle shadow */
+  text-align: left; /* Align text to the left */
+  width: 100%; /* Ensure full width usage */
+}
+
+.justify-content-center {
+  display: flex;
+  justify-content: center;
+}
+
+.mt-5 {
+  margin-top: 3rem;
+}
+
+.align-items-center {
+  display: flex;
+  align-items: center; /* Centers items vertically */
+}
+.alien-items-center {
+  display: flex;
+  align-items: center; /* Centers items vertically */
+}
+
+.img-fluid {
+  max-width: 100%; /* Makes the image responsive */
+  height: auto; /* Maintains aspect ratio */
+}
