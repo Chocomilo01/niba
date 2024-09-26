@@ -21,12 +21,17 @@
 .paystack-info {
   /* margin-top: 0px; Adjust as needed */
   margin-bottom: 30px; /* Adjust as needed */
-  padding: 100px;
+  /* padding: 100px; */
   /* background-color: #e2edf6; */
   border-radius: 15px; /* Rounded corners */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   text-align: left; /* Align text to the left */
   width: 100%; /* Ensure full width usage */
+}
+@media (min-width: 768px) {
+  .paystack-info {
+    padding: 100px; /* Adjust padding value as needed */
+  }
 }
 
 .mt-8 {
@@ -56,12 +61,16 @@
 .textmatch {
   /* margin-top: 30px; Adjust as needed */
   margin-bottom: 30px; /* Adjust as needed */
-  padding: 100px;
   /* background-color: #e2edf6; */
   border-radius: 10px; /* Rounded corners */
   box-shadow: 10px 4px 10px rgba(0, 0, 0, 0); /* Subtle shadow */
   text-align: left; /* Align text to the left */
   width: 100%; /* Ensure full width usage */
+}
+@media (min-width: 768px) {
+  .textmatch {
+    padding: 100px; /* Adjust padding value as needed */
+  }
 }
 
 .justify-content-center {

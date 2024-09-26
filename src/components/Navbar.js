@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const NavbarComponent = () => {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg">
+    <Navbar bg="dark" variant="dark" expand="lg" className="sticky-top"> {/* Add 'sticky-top' class here */}
       <Container>
         <Navbar.Brand as={Link} to="/">Nidia</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

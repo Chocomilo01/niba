@@ -68,7 +68,7 @@ const CurrencyConverter = () => {
             {/* Add more currencies as needed */}
           </Form.Control>
         </Form.Group>
-        <Button variant="primary" type="button" onClick={handleConvert}>
+        <Button variant="dark" type="button" onClick={handleConvert}>
           Convert
         </Button>
       </Form>

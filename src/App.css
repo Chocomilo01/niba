@@ -34,3 +34,9 @@ button {
 small, .subtext {
   font-size: 12px;
 }
+.c-font {
+  font-family: "Fredoka", sans-serif;
+}
+.f-font {
+  font-family: "Raleway", sans-serif;
+}
