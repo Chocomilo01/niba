@@ -1,0 +1,36 @@
+body {
+  padding: 5;
+  font-family: 'Poppins', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  /* background-color: #41c041; */
+  background: url('./assets/raid.png') no-repeat center center fixed;
+  font-size: 16px; /* Body text size */
+  line-height: 1.75; /* Spacing between lines */
+}
+
+
+
+.justify-content-end {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 48px; /* Main heading */
+}
+
+h2 {
+  font-size: 36px; /* Subheading */
+}
+
+h3 {
+  font-size: 30px;
+}
+
+button {
+  font-size: 18px;
+}
+
+small, .subtext {
+  font-size: 12px;
+}
