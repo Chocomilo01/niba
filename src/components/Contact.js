@@ -3,7 +3,7 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 
 const Contact = () => {
   return (
-    <Container className="full-height">
+    <Container className="full-height py-5">
       <Row>
         <Col md={8} className="mx-auto">
           <h2>Contact Us</h2>
